@@ -13,7 +13,7 @@ from typing import Iterable, Optional
 REPO_ROOT = Path(__file__).resolve().parent
 
 # Where your Python source lives
-SRC_ROOT = REPO_ROOT / "solutions" / "python"
+SRC_ROOT = REPO_ROOT / "src" / "python"
 
 # Where canonical inputs live now
 INPUT_ROOT = REPO_ROOT / "__inputs__"

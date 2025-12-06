@@ -1,0 +1,39 @@
+[project]
+name = "advent-of-code"
+version = "0.1.0"
+description = "My Advent of Code Solutions"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "isort>=7.0.0",
+    "pytest>=9.0.1",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.7",
+    "ty>=0.0.1a29",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+src_paths = ["src/python"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.pytest.ini_options]
+addopts = ["-ra"]
+
+
+
